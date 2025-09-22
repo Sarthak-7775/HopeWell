@@ -1,19 +1,15 @@
+## Team - THE SKY
+
+
 # SoulNect
 
-SoulNect is a soulful mental well-being web app that helps users reconnect with themselves through mood tracking, journaling, meditation, and minimal community engagement. After being shelved for two years, the project was finally revived with a refreshed experience focused on mindfulness and emotional resilience.
+HopeWell is a soulful mental well-being web app that helps users reconnect with themselves through mood tracking, journaling, meditation, and minimal community engagement. After being shelved for two years, the project was finally revived with a refreshed experience focused on mindfulness and emotional resilience.
 
-## ✨ Live Demo
 
-**Try it here:** [https://soulnect.vercel.app/](https://soulnect.vercel.app/)
-
-## 🎥 Video Demonstration
-https://x.com/geekyAyushi/status/1924053132134195545
 
 ## 🔗 Repository Links
 
-* Frontend: [https://github.com/ayushichoudhary-19/SoulNect](https://github.com/ayushichoudhary-19/SoulNect)
 
-> **Note:** Backend is not open-sourced.
 
 ## 🌟 Features
 
@@ -32,27 +28,7 @@ https://x.com/geekyAyushi/status/1924053132134195545
 * **Authentication**: JWT + bcrypt
 * **Deployment**: Vercel
 
-## 📂 Project Structure (Frontend Only)
 
-```
-SoulNect/
-├── public/
-├── src/
-│   ├── components/
-│   ├── hooks/
-│   ├── pages/
-│   ├── store/
-│   └── main.jsx
-└── README.md
-```
-
-## 🌐 API Endpoints (for demo reference only)
-
-### Base URL
-
-```
-https://soulnect-backend.vercel.app/api
-```
 
 ### User
 
@@ -90,18 +66,3 @@ https://soulnect-backend.vercel.app/api
 ## 🔐 Authentication
 
 Secure JWT-based login with password hashing.
-
-## 📞 Contact
-
-* GitHub: [@ayushichoudhary-19](https://github.com/ayushichoudhary-19)
-* LinkedIn: [Ayushi Choudhary](https://www.linkedin.com/in/ayushi-choudhary-7688b91ba/)
-
-## 📄 License
-
-**Proprietary License**
-
-* All rights reserved by Ayushi Choudhary.
-* Not intended for cloning, redistribution, or commercial use.
-* Use of any part of the source code or UI without explicit permission is prohibited.
-
-© 2024 SoulNect. All Rights Reserved.
