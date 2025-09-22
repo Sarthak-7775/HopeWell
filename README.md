@@ -1,4 +1,11 @@
 ## Team - THE SKY
+Tam Members -> 
+Harsh Soni
+Samarth Rouhela
+Sanya Goyal
+Sarthak Kandpal
+Anubhav Chauhan
+Dharam Pratap Singh
 
 
 # SoulNect
