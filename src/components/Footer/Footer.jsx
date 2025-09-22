@@ -20,19 +20,7 @@ export default function Footer() {
               A sanctuary for your emotional well-being, where soul meets connection in a journey of 
               self-discovery, mindfulness, and growth.
             </p>
-            <div className="flex space-x-4 mt-4">
-              <motion.a 
-                href="https://github.com/Sarthak-7775/HopeWell" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="bg-black/10 p-2 rounded-full hover:bg-black/20 transition-colors"
-              >
-                <IconBrandGithub size={20} />
-             
-              </motion.a>
-            </div>
+            {/* Removed GitHub and LinkedIn links for Ayushi */}
           </div>
           
           {/* Quick Links */}
@@ -65,32 +53,7 @@ export default function Footer() {
             </motion.a>
           </div>
         </div>
-        <motion.div 
-          className="flex justify-center mt-10 mb-6"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-        >
-          <motion.a
-            href="https://github.com/Sarthak-7775/HopeWell"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center px-6 py-3 bg-purple-100 rounded-full hover:bg-purple-200 transition-colors"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            <span className="text-purple-800 font-medium">Team </span>
-            <motion.span 
-              className="text-red-500 mx-1"
-              animate={{ scale: [1, 1.2, 1] }}
-              transition={{ repeat: Infinity, duration: 1.5 }}
-            >
-              ❤️
-            </motion.span>
-            <span className="text-purple-800 font-medium"></span>
-            <span className="text-purple-900 font-bold ml-1">The Sky</span>
-          </motion.a>
-        </motion.div>
+  {/* Removed Team ❤️ The Sky button */}
         
         <div className="border-t border-black/10 mt-6 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-black/60 text-sm">
