@@ -64,7 +64,7 @@ const Home = () => {
             className="fixed top-20 right-4 z-50"
           >
             <a 
-              href="https://github.com/ayushichoudhary-19" 
+              href="https://github.com/Sarthak-7775/HopeWell" 
               target="_blank" 
               rel="noopener noreferrer" 
               aria-label="View source on GitHub"

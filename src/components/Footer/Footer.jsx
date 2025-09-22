@@ -22,7 +22,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4 mt-4">
               <motion.a 
-                href="https://github.com/ayushichoudhary-19" 
+                href="https://github.com/Sarthak-7775/HopeWell" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
@@ -30,24 +30,7 @@ export default function Footer() {
                 className="bg-black/10 p-2 rounded-full hover:bg-black/20 transition-colors"
               >
                 <IconBrandGithub size={20} />
-              </motion.a>
-              <motion.a 
-                href="https://www.linkedin.com/in/ayushi-choudhary-7688b91ba/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="bg-black/10 p-2 rounded-full hover:bg-black/20 transition-colors"
-              >
-                <IconBrandLinkedin size={20} />
-              </motion.a>
-              <motion.a 
-                href="mailto:ayushichoudhary0016@gmail.com"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="bg-black/10 p-2 rounded-full hover:bg-black/20 transition-colors"
-              >
-                <IconMail size={20} />
+             
               </motion.a>
             </div>
           </div>
@@ -73,7 +56,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-black">Contact</h3>
             <p className="text-black/70 mb-2">Have questions or feedback?</p>
             <motion.a 
-              href="mailto:ayushichoudhary0016@gmail.com"
+              href="mailto:sarthakkandpaltech@gmail.com"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="inline-block bg-purple-600 px-4 py-2 rounded-lg text-white hover:bg-purple-700 transition-colors"
@@ -89,14 +72,14 @@ export default function Footer() {
           transition={{ delay: 0.2 }}
         >
           <motion.a
-            href="https://www.linkedin.com/in/ayushi-choudhary-7688b91ba/"
+            href="https://github.com/Sarthak-7775/HopeWell"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center px-6 py-3 bg-purple-100 rounded-full hover:bg-purple-200 transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
-            <span className="text-purple-800 font-medium">Made with</span>
+            <span className="text-purple-800 font-medium">Team </span>
             <motion.span 
               className="text-red-500 mx-1"
               animate={{ scale: [1, 1.2, 1] }}
@@ -104,23 +87,23 @@ export default function Footer() {
             >
               ❤️
             </motion.span>
-            <span className="text-purple-800 font-medium">by</span>
-            <span className="text-purple-900 font-bold ml-1">Ayushi</span>
+            <span className="text-purple-800 font-medium"></span>
+            <span className="text-purple-900 font-bold ml-1">The Sky</span>
           </motion.a>
         </motion.div>
         
         <div className="border-t border-black/10 mt-6 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-black/60 text-sm">
-            © {currentYear} SoulNect. All rights reserved.
+            © {currentYear} HopeWell. All rights reserved.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          {/* <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="text-black/60 text-sm hover:text-black transition-colors">
               Privacy Policy
             </Link>
             <Link to="/terms" className="text-black/60 text-sm hover:text-black transition-colors">
               Terms of Service
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </motion.footer>
