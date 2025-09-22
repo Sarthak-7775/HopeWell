@@ -23,17 +23,36 @@ const SignIn = () => {
     e.preventDefault();
     setIsSubmitting(true);
     setError("");
-    // Bypass authentication: accept any credentials
-    const fakeUserId = email || name || "guest";
-    localStorage.setItem("userId", fakeUserId);
-    localStorage.setItem("name", name || email || "Guest");
-    login(fakeUserId);
-    if (!showForm) {
-      navigate("/onboarding");
-    } else {
-      navigate("/home");
+
+    const endpoint = showForm
+      ? `${import.meta.env.VITE_BACKEND_URL}/api/signin`
+      : `${import.meta.env.VITE_BACKEND_URL}/api/signup`;
+    try {
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, password }),
+      });
+
+      const data = await res.json();
+      if (res.ok) {
+        localStorage.setItem("userId", data.userId);
+        localStorage.setItem("name", name);
+        login(data.userId);
+        
+        if (!showForm) {
+          navigate("/onboarding");
+        } else {
+          navigate("/home");
+        }
+      } else {
+        setError(data.message || "Authentication failed");
+      }
+    } catch (err) {
+      setError("An error occurred. Please try again.");
+    } finally {
+      setIsSubmitting(false);
     }
-    setIsSubmitting(false);
   };
 
   const toggleForm = () => {
